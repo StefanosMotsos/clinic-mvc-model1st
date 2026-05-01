@@ -5,10 +5,10 @@ namespace ClinicApp.Repositories.Base
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
-        protected readonly ClinicMvcdbfirstContext _context;
+        protected readonly ClinicMvcModelFirstContext _context;
         protected readonly DbSet<T> _dbSet;
 
-        public BaseRepository(ClinicMvcdbfirstContext context)
+        public BaseRepository(ClinicMvcModelFirstContext context)
         {
             _context = context;
             _dbSet = _context.Set<T>();

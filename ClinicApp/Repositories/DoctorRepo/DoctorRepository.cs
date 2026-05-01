@@ -9,13 +9,13 @@ namespace ClinicApp.Repositories.DoctorRepo
 {
     public class DoctorRepository : BaseRepository<Doctor>, IDoctorRepository
     {
-        public DoctorRepository(ClinicMvcdbfirstContext context) : base(context) { }
+        public DoctorRepository(ClinicMvcModelFirstContext context) : base(context) { }
 
         public async Task<List<MedicalProgram>> GetDoctorProgramsAsync(int doctorId)
         {
             List<MedicalProgram> programs;
 
-            programs = await _context.MedicalPrograms
+            programs = await _context.MedicalProgram
                 .Where(p => p.DoctorId == doctorId)
                 .ToListAsync();
 

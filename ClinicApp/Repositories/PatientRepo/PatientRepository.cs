@@ -9,7 +9,7 @@ namespace ClinicApp.Repositories.PatientRepo
 {
     public class PatientRepository : BaseRepository<Patient>, IPatientRepository
     {
-        public PatientRepository(ClinicMvcdbfirstContext context) : base(context) { }
+        public PatientRepository(ClinicMvcModelFirstContext context) : base(context) { }
 
         public async Task<List<MedicalProgram>> GetPatientProgramsAsync(int patientId)
         {

@@ -8,13 +8,13 @@ namespace ClinicApp.Repositories.UoW
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly ClinicMvcdbfirstContext _context;
+        private readonly ClinicMvcModelFirstContext _context;
         public IUserRepository UserRepository { get; }
         public IPatientRepository PatientRepository { get; }
         public IDoctorRepository DoctorRepository { get; }
         public IMedicalProgramRepository MedicalProgramRepository { get; }
 
-        public UnitOfWork(ClinicMvcdbfirstContext context)
+        public UnitOfWork(ClinicMvcModelFirstContext context)
         {
             _context = context;
             UserRepository = new UserRepository(context);

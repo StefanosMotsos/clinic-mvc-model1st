@@ -10,7 +10,7 @@ namespace ClinicApp.Repositories.UserRepo
     public class UserRepository : BaseRepository<User>, IUserRepository
     {
 
-        public UserRepository(ClinicMvcdbfirstContext context) : base(context)
+        public UserRepository(ClinicMvcModelFirstContext context) : base(context)
         {
         }
 
