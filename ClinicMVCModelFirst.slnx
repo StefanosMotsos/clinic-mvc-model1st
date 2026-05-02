@@ -6,5 +6,6 @@
     <File Path="docker-compose.yml" />
     <File Path="Dockerfile" />
   </Folder>
+  <Project Path="ClinicApp.Tests/ClinicApp.Tests.csproj" Id="0c02d23c-34ad-49dc-9a70-53afccb9d0ae" />
   <Project Path="ClinicApp/ClinicApp.csproj" />
 </Solution>
